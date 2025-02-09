@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Nuestro primer mes juntos!</title>
+    <style>
+        /* Fuente romántica */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Pacifico', cursive;
+            background: linear-gradient(135deg, #8b0000, #ff6f61);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Rosas, Snoopys y Hello Kittys animados en el fondo */
+        .rose, .snoopy, .hello-kitty {
+            position: absolute;
+            top: -50px;
+            animation: fall linear infinite;
+        }
+
+        .rose {
+            font-size: 30px;
+            color: #ff6f61;
+        }
+
+        .snoopy, .hello-kitty {
+            width: 40px;
+            height: auto;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            z-index: 1;
+            max-width: 400px;
+        }
+
+        img {
+            width: 180px;
+            height: 220px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #8b0000;
+            margin-bottom: 10px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="rose" style="left: 10%; animation-duration: 8s;">🌹</div>
+    <img class="snoopy" src="snoopy.png" style="left: 20%; animation-duration: 10s;" alt="Snoopy">
+    <img class="hello-kitty" src="kitty.png" style="left: 25%; animation-duration: 11s;" alt="Hello Kitty">
+    <div class="rose" style="left: 30%; animation-duration: 12s;">🌹</div>
+    <img class="snoopy" src="snoopy.png" style="left: 40%; animation-duration: 9s;" alt="Snoopy">
+    <img class="hello-kitty" src="kitty.png" style="left: 45%; animation-duration: 10s;" alt="Hello Kitty">
+    <div class="rose" style="left: 50%; animation-duration: 11s;">🌹</div>
+    <img class="snoopy" src="snoopy.png" style="left: 60%; animation-duration: 7s;" alt="Snoopy">
+    <img class="hello-kitty" src="kitty.png" style="left: 65%; animation-duration: 9s;" alt="Hello Kitty">
+    <div class="rose" style="left: 70%; animation-duration: 13s;">🌹</div>
+    <img class="snoopy" src="snoopy.png" style="left: 80%; animation-duration: 8s;" alt="Snoopy">
+    <img class="hello-kitty" src="kitty.png" style="left: 85%; animation-duration: 10s;" alt="Hello Kitty">
+    <div class="rose" style="left: 90%; animation-duration: 10s;">🌹</div>
+
+    <div class="container">
+        <img src="sar.jpeg" alt="Nuestra foto">
+        <h1>Nuestro primer mes juntos 💕</h1>
+        <p>El día que te conocí, hubo algo en ti que me atrapó por completo. Al principio, no sabía exactamente qué era, pero con el tiempo, mientras te fui conociendo más, entendí que lo que me enamoró fue tu esencia, tu forma de ser, la manera en que tratas a los demás con tanta dulzura y autenticidad.
+
+            Este primer mes solo es el inicio de algo increíble, de nuestra vida juntos. Espero que sean muchos más, porque de verdad quiero que estés en mi vida. Gracias por ser tú y por hacerme tan feliz. Te amo mucho ❤️.</p>
+    </div>
+</body>
+</html>
